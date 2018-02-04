@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title> Computer Science Department </title>
+	<link rel="stylesheet" type="text/css" href="assignment2.css" />
+	<script src = "assignment2.js"> </script>
+</head>
+<img id = "logo" src="http://redsox.tcs.auckland.ac.nz/ups/logo.svg" onclick = "javascript:showHomeTab('1')" onmouseover="" style="cursor: pointer;"/>
+<body id = "body">
+<div class = "titleDiv">
+	
+	<h1 id ="heading"> Computer Science Department </h1>
+
+<ul class="menu" id="navBar">
+	<li class="icon">
+		<a href="javascript:void(0);" style="font-size:15px;" onclick="barFunction()">&#9776;</a>
+	</li>
+	<li id = "1" class="active"><a href="javascript:showHomeTab('1')">Home</a></li>
+	<li id = "2"><a href="javascript:showPeopleTab('2')">People</a></li>
+	<li id = "3"><a href="javascript:showCourseTab('3')">Courses</a></li>
+	<li id = "4"><a href="javascript:showNewsTab('4')">News</a></li>
+	<li id = "5"><a href="javascript:showNoticesTab('5')">Notices</a></li>
+	<li id = "6"><a href="javascript:showCommentsTab('6')">GuestBook</a></li>
+		
+</ul>
+
+<div id ="homeTab">
+	<h2>Welcome to New Zealand's leading computer science department. We pride ourselves on the excellence of our staff and our students.
+	<br/><img id = "homeimage" src = "Image.jpg"></img></h2>
+	<h2><a href='http://www.freepik.com/free-vector/blue-binary-background_801440.htm'>Designed by Freepik</a></h2>
+</div>
+
+<div class ="divblocks" id ="peopleTab">
+	<table id="showTab" class="table"> </table>
+</div>
+
+<div class ="divblocks" id ="courseTab">
+	<table id="showTab2" class="table"> </table>
+</div>
+
+<div class ="divblocks" id ="newsTab">
+	<table id="showTab3" class="table"> </table>
+</div>
+
+<div class ="divblocks" id ="noticesTab">
+	<table id="showTab4" class="table"> </table>
+</div>
+
+<div class ="divblocks" id ="commentsTab">
+	<div id = "newcomment" style="color:white; margin-top:20px">
+		<form name="commentText">
+		<h2 > GuestBook </h2>
+			Name: <input id = "username" type="text" name="name">
+		   <br/>
+		   Comment:
+		   <br/>
+			<textarea id="commentText" name="commentText"></textarea>
+			<br/>
+			<button id="submitButton" type="button" name="submit" onclick="submitComment()">Submit</button>
+		</form>
+	</div>
+	<div id="htmlcomments"></div>
+</div>
+
+</body>
+</html>
